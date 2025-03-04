@@ -1,0 +1,209 @@
+.header{
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px rgb(233, 232, 232) solid;
+    z-index: 100;
+}
+.left-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.hamburger-menu{
+    width: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.youtube-logo{
+    width: 90px;
+    margin-left: 26px;
+    cursor: pointer;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 450px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+.searchbar{
+    height: 34px;
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    width: 0px;
+}
+.searchbar::placeholder{
+    font-size: 18px;
+    padding-left: 10px;
+    color: rgb(112, 107, 107);
+}
+.search-button{
+    width: 60px;
+    margin-left: -2px;
+    height: 37px;
+    margin-right: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    cursor: pointer;
+
+    position: relative;
+}
+.search-icon{
+    width: 22px;
+}
+.search-button .tooltip{
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    font-weight:bold;
+    padding: 4px 4px 4px 4px;
+    border-radius: 2px;
+    bottom: -34px;
+    left: 4px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+.voice-button{
+    height: 38px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(247, 246, 246);
+    cursor: pointer;
+
+    position: relative;
+}
+.voice-button .tooltip{
+    position: absolute;
+    white-space: nowrap;
+    background-color: gray;
+    color: white;
+    padding: 4px 6px 4px 6px;
+    border-radius: 2px;
+    bottom: -34px;
+    left: -50px;
+    font-size: 14px;
+    font-weight:bold;
+    opacity: 0;
+    pointer-events: none;
+}
+.voice-button:hover .tooltip{
+    opacity: 1;
+}
+.voice-icon{
+    width: 20px;
+    padding: 4px;
+}
+.right-section{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.create{
+    width: 28px;
+    cursor: pointer;
+}
+.apps{
+    width: 28px;
+    cursor: pointer;
+}
+.notification-icon{
+    width: 28px;
+    cursor: pointer;
+}
+.profile-container{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    margin-top: 0px;
+}
+.create-icon{
+    position: relative;
+}
+.create-icon .tooltip{
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 6px 4px 6px;
+    position: absolute;
+    pointer-events: none;
+    bottom: -38px;
+    left: -10px;
+    opacity: 0;
+}
+.create-icon:hover .tooltip{
+    opacity: 1;
+}
+.apps-icon{
+    position: relative;
+}
+.apps-icon .tooltip{
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 6px 4px 6px;
+    position: absolute;
+    pointer-events: none;
+    bottom: -36px;
+    left: -6px;
+    opacity: 0;
+}
+.apps-icon:hover .tooltip{
+    opacity: 1;
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-icon-container .tooltip{
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 6px 4px 6px;
+    position: absolute;
+    pointer-events: none;
+    bottom: -36px;
+    left: -20px;
+    opacity: 0;
+}
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+.notification-count{
+    background-color: rgb(207, 7, 7);
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    color: white;
+    border-radius: 50px;
+    font-size: 10px;
+    font-family: Roboto,Arial;
+    padding: 2px 5px 2px 5px;
+}
